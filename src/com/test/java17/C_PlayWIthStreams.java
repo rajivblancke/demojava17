@@ -9,5 +9,13 @@ public class C_PlayWIthStreams {
                 .count();
 
         System.out.println("Count: " + count);
+
+        //String ints = """
+        //        1
+        //        2
+        //        3
+        //        4
+        //        5
+        //        """;
     }
 }

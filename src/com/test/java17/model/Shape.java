@@ -1,4 +1,4 @@
 package com.test.java17.model;
 
-public interface Shape {
+public sealed interface Shape permits Square, Rectangle, Circle {
 }

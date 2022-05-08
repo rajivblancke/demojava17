@@ -1,4 +1,4 @@
 package com.test.java17.model;
 
-public record Square(int edge) {
+public record Square(int edge) implements Shape {
 }

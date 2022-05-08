@@ -19,7 +19,7 @@ public class E_PlayWIthRecordsAndIO {
 
         RangeClass(int begin, int end) {
             //if (begin > end) {
-            //    throw new IllegalArgumentException("End must be greater than begin");
+            //    throw new IllegalArgumentException("Begin must be smaller than end");
             //}
             this.begin = begin;
             this.end = end;
@@ -43,7 +43,7 @@ public class E_PlayWIthRecordsAndIO {
         var oos = new ObjectOutputStream(fos);
         oos.writeObject(range);
 
-        //var fis = Files.newInputStream(Path.of("files/range_0_10.dat"));
+        //var fis = Files.newInputStream(Path.of("files/range_10_0.dat"));
         //var ois = new ObjectInputStream(fis);
         //System.out.println("Reading range");
         //var readRange = ois.readObject();

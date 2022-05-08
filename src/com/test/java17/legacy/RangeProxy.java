@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 public record RangeProxy(int begin, int end) implements Serializable {
     public RangeProxy{
-        //RangeLegacy.Validator.validate(begin, end);
+        RangeLegacy.Validator.validate(begin, end);
     }
 
     @Serial

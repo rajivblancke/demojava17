@@ -36,10 +36,10 @@ public class E_PlayWIthRecordsAndIO {
     }
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        var range = new RangeClass(0, 10);
+        var range = new RangeClass(10, 0);
         System.out.println("range = " + range);
 
-        var fos = Files.newOutputStream(Path.of("files/range_0_10.dat"));
+        var fos = Files.newOutputStream(Path.of("files/range_10_0.dat"));
         var oos = new ObjectOutputStream(fos);
         oos.writeObject(range);
 

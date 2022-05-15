@@ -41,5 +41,24 @@ public class C_PlayWIthStreams {
         var list = ints.lines().map(Integer::parseInt)
                 .toList();
         System.out.println("list: " + list);*/
+
+        //mapMulti
+/*        String ints = """
+        1
+        2
+        3
+        4
+        test
+        5
+        """;
+        var list = ints.lines()
+                .map(Integer::parseInt)
+                //.mapMulti((s, stream) -> {
+                //    try {
+                //        stream.accept(Integer.parseInt(s));
+                //    } catch (NumberFormatException e) {}
+                //})
+                .toList();
+        System.out.println("list: " + list);*/
     }
 }

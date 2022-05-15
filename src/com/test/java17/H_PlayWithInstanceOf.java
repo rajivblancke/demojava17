@@ -10,12 +10,13 @@ public class H_PlayWithInstanceOf {
     }
 
     public int surface(Shape shape) {
-        if (shape instanceof Square square){
-            return square.edge() * square.edge();
-        } else if (shape instanceof Rectangle rect) {
-            return rect.height() * rect.width();
+        //pattern matching for instanceof
+        if (shape instanceof Square) {
+            return ((Square) shape).edge() * ((Square) shape).edge();
+        } else if (shape instanceof Rectangle) {
+            return ((Rectangle) shape).height() * ((Rectangle) shape).width();
         }
-        //circle missing
+        //circle is missing here
         return 0;
     }
 }

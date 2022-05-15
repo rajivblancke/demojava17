@@ -10,17 +10,18 @@ import java.nio.file.Path;
 
 public class F_PlayWithRecordsAndSerialization {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
+        //write legacy object
         var range = new RangeLegacy(10, 0);
         System.out.println("range = " + range);
-
         var fos = Files.newOutputStream(Path.of("files/range_legacy_10_0.dat"));
         var oos = new ObjectOutputStream(fos);
         oos.writeObject(range);
 
-        //var fis = Files.newInputStream(Path.of("files/range_legacy_10_0.dat"));
-        //var ois = new ObjectInputStream(fis);
-        //System.out.println("Reading range");
-        //var readRange = ois.readObject();
-        //System.out.println("readRange = " + readRange);
+        //read record and expect exception
+/*        var fis = Files.newInputStream(Path.of("files/range_legacy_10_0.dat"));
+        var ois = new ObjectInputStream(fis);
+        System.out.println("Reading range");
+        var readRange = ois.readObject();
+        System.out.println("readRange = " + readRange);*/
     }
 }

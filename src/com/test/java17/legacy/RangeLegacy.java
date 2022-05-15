@@ -16,7 +16,7 @@ public class RangeLegacy implements Serializable {
     private final int end;
 
     public RangeLegacy(int begin, int end) {
-        Validator.validate(begin, end);
+        //Validator.validate(begin, end);
         this.begin = begin;
         this.end = end;
     }

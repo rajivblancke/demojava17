@@ -10,12 +10,36 @@ public class C_PlayWIthStreams {
 
         System.out.println("Count: " + count);
 
-        //String ints = """
-        //        1
-        //        2
-        //        3
-        //        4
-        //        5
-        //        """;
+        //add peek
+/*        var countWithPeek = listOf.stream()
+                //.skip(2)
+                //.limit(2)
+                //.filter(s -> true)
+                .peek(System.out::println)
+                .count();
+        System.out.println("Count: " + countWithPeek);*/
+
+        //stream with side effect
+/*        var list = new ArrayList<String>();
+        var count = listOf.stream()
+                .map(s -> {
+                    list.add(s);
+                    return s.toUpperCase();
+                })
+                .count();
+        System.out.println("Count: " + count);
+        System.out.println("list: " + list);*/
+
+        //toList added
+/*        String ints = """
+                1
+                2
+                3
+                4
+                5
+                """;
+        var list = ints.lines().map(Integer::parseInt)
+                .toList();
+        System.out.println("list: " + list);*/
     }
 }
